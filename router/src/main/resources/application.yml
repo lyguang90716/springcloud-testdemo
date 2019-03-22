@@ -1,0 +1,21 @@
+server:
+  port: 10000 #程序启动端口,tomcat端口(可自定义)
+spring:
+  application:
+    name: api-gateway-zuul #应用名称(别名)
+  cloud:
+    config:
+      discovery:
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #显示 ip
+
+zuul:
+  routes:
+    api-hi:
+      path : /api-hi/**
+      serviceId : service-hi

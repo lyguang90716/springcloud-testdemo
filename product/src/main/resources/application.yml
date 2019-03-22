@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: service-hi
+  cloud:
+    config:
+    discovery:
+      enabled: true

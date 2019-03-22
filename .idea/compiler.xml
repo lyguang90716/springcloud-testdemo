@@ -9,6 +9,7 @@
         <module name="consumer" />
         <module name="eureka" />
         <module name="hi-product" />
+        <module name="router" />
         <module name="springcloud" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="hi-product" options="-parameters" />
+      <module name="router" options="-parameters" />
     </option>
   </component>
 </project>
