@@ -1,0 +1,36 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: service-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: D:/JAVA/PROJECT/conf
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 35.194.237.28
+    port: 5672
+    username: lyguang
+    password: 123456
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+security:  #是否开启基本的鉴权，默认为true
+  basic:
+    enabled: false

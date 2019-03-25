@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8763
+spring:
+  application:
+    name: service-hi
+  cloud:
+    config:
+      profile: base
+      discovery:
+        enabled: true
+        service-id: service-config
+    bus:
+      trace:
+        enabled: true
+      enabled: true
+  rabbitmq:
+    host: 35.194.237.28
+    port: 5672
+    username: lyguang
+    password: 123456
+
+security:                                #
+  basic:
+    enabled: false
