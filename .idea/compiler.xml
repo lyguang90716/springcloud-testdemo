@@ -10,6 +10,7 @@
         <module name="consumer" />
         <module name="eureka" />
         <module name="hi-product" />
+        <module name="mongodb" />
         <module name="router" />
         <module name="springcloud" />
       </profile>
@@ -27,6 +28,7 @@
       <module name="demo" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="hi-product" options="-parameters" />
+      <module name="mongodb" options="-parameters" />
       <module name="router" options="-parameters" />
     </option>
   </component>
